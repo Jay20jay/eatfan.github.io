@@ -1,0 +1,115 @@
+/* === Body Styles === */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    padding: 0 20px; /* Adds some padding to smaller screens */
+    font-style: normal;
+    line-height: 1.5em;
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      max-width: 1200px;
+      padding: 0 40px; /* Increase padding on larger screens */
+    }
+  }
+  
+  body {
+    font-size: 16px; /* Base font size */
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px; /* Larger font size for tablets and desktops */
+    }
+  }
+  
+  /* === Navigation Bar Styles === */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(193, 140, 61);
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: rgb(242, 216, 164);
+  }
+  
+  /* === Header Styles === */
+  .header {
+    font-size: 50px;
+    text-align: center;
+    color: darkseagreen;
+  }
+
+  /* === Row Styles === */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between the cards */
+    padding: 10px;
+  }
+
+  /* === Column Styles === */
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  /* === Card Styles === */
+  .card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .container img {width: 100%;}
+
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  }
+  
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+    
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+  }
+  
