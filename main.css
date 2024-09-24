@@ -1,0 +1,125 @@
+/* === General Element Styling === */
+header, section, nav, article, figure, figcaption {
+  display: block;
+}
+
+/* === Body Styles === */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px; /* Adds some padding to smaller screens */
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+
+/* === Navigation Bar Styles === */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(193, 140, 61);
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: rgb(242, 216, 164);
+}
+
+/* === Header Styles === */
+.header {
+  font-size: 50px;
+  text-align: center;
+  color: darkseagreen;
+}
+
+.seagreen {
+  color: darkseagreen;
+  padding-top: 40px;
+}
+
+/* === Layouts === */
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr; /* Stacks the columns on smaller screens */
+  }
+}
+
+
+/* Flexbox for distributing items */
+.wrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+   /* Style for each column */
+   .column {
+    flex: 1 1 30%;                 /* Each column takes 30% of the available width */
+    min-width: 250px;              /* Minimum width for responsiveness */
+    text-align: center;            /* Center text inside the column */
+    box-sizing: border-box;
+}
+
+/* Style for card images , so they don't overflow */
+.container img{width: 100%;}
+
+
+.Closing {
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+/* Positioning the image of the chef */
+.position {
+  position: relative;
+  top: 100px;
+}
+
+/* === Card Styles === */
+.card {
+  box-shadow: 0 0 10px #777;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.container {
+  padding: 2px;
+}
+
+/* === Footer Styles === */
+footer {
+  margin-top: 50px;
+  padding: 0 20px ;
+  background-color: darkseagreen;
+  color: white;
+}
+

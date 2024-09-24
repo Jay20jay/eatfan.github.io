@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dinein.css" type="text/css">
+</head>
+<body>
+    
+    <div id="content">
+        <header>
+            <h1 class="header">Eatfan</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="orderonline.html">OrderOnline</a></li>
+                    <li><a href="contactus.html">ContactUs</a></li>
+                    <li><a href="dinein.html">DineIn</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="row">
+               <div class="column1">
+                <h1>Menu</h1>
+                <ul>
+                    <li>
+                        <h2>Breakfast</h2>
+                        <p>Congee</p>
+                        <p>Steamed dumplings</p>
+                        <p>Hot-Dry Noodles</p>
+                        <p>Breakfast Crepes</p>
+                    </li>
+                    <li>
+                        <h2>Lunch</h2>
+                        <p>Beef and black bean Ho Fun</p>
+                        <p>Three cup chicken with garlic spinach</p>
+                        <p>Vegeterian Tofu, Tenderstem and Black bean stir fry</p>
+                        <p>Vegetable Chow Mein</p>
+                    </li>
+                    <li>
+                        <h2>Dinner</h2>
+                        <p>Sichuan chicken</p>
+                        <p>Crispy sesame chicken</p>
+                        <p>Sweet & sour chicken</p>
+                        <p>Slow cooked beef short rib</p>
+                    </li>
+                 </ul>
+             </div>
+                 <div class="column2">
+                    <section>
+                        <h2 class="head">Reservation</h2>
+                            <div class="container">
+                                <div class="row">
+                                    <form class="alignleft" action="/reservation">
+                                        <label class="style" for="Guests">Guests:</label>
+                                        <input type="number" id="Guests" name="Guests" min="0" max="10" step="1" value="10">
+                                        <input class="btn" type="submit" value="Submit">
+                                  </form>
+                                </div>
+                                <div class="row">
+                                    <form class="alignright" action="/reservation">
+                                        <label class="style" for="Date and time"> Date and time:</label>
+                                        <input type="datetime-local" id="reservationtime" name="reservationtime">
+                                        <input class="btn" type="submit">
+                                  </form> 
+                                </div>
+                            </div>
+                            
+                           <section class="section">
+                             <form>
+                                <label class="style" for="msg">Special Requirements?:</label>
+                                <textarea id="msg" name="user_message"></textarea>      
+                                <input class="btn"  type="submit">                        
+                             </form>         
+                           </section>  
+                                
+                    </section>
+                    
+                 </div>
+                
+                
+            </div>
+            
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </div>    
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* === Body Styles === */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px; /* Adds some padding to smaller screens */
+    font-style: normal;
+    line-height: 1.5em;
+  }
+  
+  
+  /* === Navigation Bar Styles === */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(193, 140, 61);
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  nav li a:hover {
+    background-color: rgb(242, 216, 164);
+  }
+
+  /* === Header Styles === */
+.header {
+    font-size: 50px;
+    text-align: center;
+    color: darkseagreen;
+  }
+
+    /* === List styles === */
+h1{font-size: 45px;
+  margin: 50px 0;
+  color:darkseagreen;
+  padding: 0 50px;
+}
+
+ul{list-style-type: none;}
+
+li h2{color: rgb(193, 140, 61);
+font-weight: 100;
+}
+
+li{color:grey}
+
+p:hover{
+    color: rgb(243, 197, 141);
+    cursor: pointer;
+    
+}
+
+   /* === Grid styles === */
+ .row {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+ }
+
+ .column2{position: relative;
+  top: 30px;
+}
+
+@media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  }
+
+
+
+
+
+   /* === From styles === */
+.container{
+    display: flex;
+    flex: row;
+   }
+
+.section{margin: 20px 0;}
+
+.style{color:rgb(193, 140, 61);
+    font-weight: 100;
+    font-size: large;
+
+}
+
+.head{color:darkseagreen;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+form textarea{
+ height: 100px;   
+ width: 200px;
+}
+
+
+
+.btn{padding: 2px 4px;
+font-size: small;
+background-color: darkseagreen;
+color: white;
+border-radius: 10%;
+display:block;
+border:none;
+border-radius: 5px;
+cursor:pointer;
+padding: 5px 8px;
+margin-top: 10px;
+}
+
+.btn:hover{background-color: rgb(193, 140, 61);}
